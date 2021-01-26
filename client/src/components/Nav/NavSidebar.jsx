@@ -1,24 +1,25 @@
 import React from "react";
 import "./style.css";
+import {Link} from "react-router-dom";
 
 function NavSidebar() {
 
   return (
-    <div class="collapse" id="navbarToggleExternalContent">
-      <div class="list-group list-group-flush">
-        <a href="/" class="list-group-item list-group-item-action bg-dark fancy" style={{color: "whitesmoke"}}>
+    <div className="collapse" id="navbarToggleExternalContent">
+      <div className="list-group list-group-flush">
+        <a href="/" className="list-group-item list-group-item-action bg-dark fancy" style={{color: "whitesmoke"}}>
           Home
         </a>
-        <a href="/planner" class="list-group-item list-group-item-action bg-dark fancy" style={{color: "whitesmoke"}}>
+        <Link to="/planner" className="list-group-item list-group-item-action bg-dark fancy" style={{color: "whitesmoke"}}>
           Planner
-        </a>
-        <a href="/profile" class="list-group-item list-group-item-action bg-dark fancy" style={{color: "whitesmoke"}}>
+        </Link>
+        <a href="/blog" className="list-group-item list-group-item-action bg-dark fancy" style={{color: "whitesmoke"}}>
           Adventures
         </a>
-        <a href="/gallery" class="list-group-item list-group-item-action bg-dark fancy" style={{color: "whitesmoke"}}>
+        <a href="/gallery" className="list-group-item list-group-item-action bg-dark fancy" style={{color: "whitesmoke"}}>
           Gallery
         </a>
-        <a href="/preferences" class="list-group-item list-group-item-action bg-dark fancy" style={{color: "whitesmoke"}}>
+        <a href="/preferences" className="list-group-item list-group-item-action bg-dark fancy" style={{color: "whitesmoke"}}>
           Preferences
         </a>
       </div>

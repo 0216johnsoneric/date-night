@@ -1,39 +1,33 @@
+// Link to sidebar app I tried to emulate for app
+
+// https://github.com/StartBootstrap/startbootstrap-simple-sidebar/blob/master/index.html
+// https://startbootstrap.com/previews/simple-sidebar
+
 import React from "react";
 import "./style.css";
 
 function NavToggle() {
   return (
-    <div class="d-flex" id="wrapper">
-      <div class="bg-dark" id="sidebar-wrapper">
-        <div class="sidebar-heading fancy">Date Night </div>
-        <div class="list-group list-group-flush">
-          <a href="#" class="list-group-item list-group-item-action bg-dark">
-            Dashboard
+    <div className="d-flex" id="wrapper">
+      <div className="bg-dark" id="sidebar-wrapper">
+        <div className="sidebar-heading fancy">Date Night </div>
+        <div className="list-group list-group-flush">
+          <a href="/blog" className="list-group-item list-group-item-action bg-dark">
+            Blog
           </a>
-          <a href="#" class="list-group-item list-group-item-action bg-dark">
-            Shortcuts
+          <a href="preferences" className="list-group-item list-group-item-action bg-dark">
+            Preferences
           </a>
         </div>
       </div>
 
       <div id="page-content-wrapper">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <button class="btn btn-primary" id="menu-toggle">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+          <button className="btn btn-primary" id="menu-toggle">
             Toggle Menu
           </button>
         </nav>
       </div>
-      <button
-          className="navbar-toggler ml-1"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarToggleExternalContent"
-          aria-controls="navbarToggleExternalContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
     </div>
   );
 }

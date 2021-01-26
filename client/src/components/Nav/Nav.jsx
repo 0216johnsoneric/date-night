@@ -1,19 +1,17 @@
 import React from "react";
-import Login from "../Buttons/login";
+import LoginBtn from "../Buttons/login";
 import Signup from "../Buttons/signup";
-import NavSidebar from "./NavSidebar";
 import "./style.css";
 
 function Navbar() {
   return (
     <nav className="navbar navbar-dark bg-dark">
       <div className="container-fluid">
-        {/* <NavSidebar /> */}
         <a className="navbar-brand fancy" href="/">
           Date Night
         </a>
         <Signup />
-        <Login />
+        <LoginBtn />
         <button
           className="navbar-toggler ml-1"
           type="button"

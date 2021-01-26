@@ -1,0 +1,11 @@
+.separator {
+    border-top: 1px solid rgb(145, 142, 142);
+}
+
+label {
+    color: whitesmoke;
+}
+
+.row {
+    margin: auto;
+}

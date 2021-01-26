@@ -1,26 +1,33 @@
-const mongoose = require("mongoose");
+module.exports = function(sequelize, DataTypes) {
+  const Date = sequelize.define("Date", {
+    location: {
+      allowNull: false,
+      type: DataTypes.STRING
+    },
+    date: {
+      allowNull: false,
+      type: DataTypes.STRING
+    },
+    instructions: {
+      allowNull: false,
+      type: DataTypes.STRING(5000)
+    },
+    budget: {
+      type: DataTypes.STRING,
+    },
+    items: {
+      type: DataTypes.STRING,
+    },
+    links: {
+      type: DataTypes.STRING,
+    },
+    photo: {
+      type: DataTypes.STRING,
+    }
+  },
+  {
+    timestamps: false
+  });
+  return Date;
+};
 
-const Schema = mongoose.Schema;
-
-const datesSchema = new Schema({
-  location: {
-    type: String,
-    trim: true,
-  },
-  instructions: {
-    type: String,
-  },
-  budget: {
-    type: String,
-  },
-  items: {
-    type: String,
-  },
-  link: {
-    type: String,
-  },
-});
-
-const Dates = mongoose.model("Dates", datesSchema);
-
-module.exports = Dates;
