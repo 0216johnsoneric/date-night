@@ -1,5 +1,5 @@
 # Date Night
-https://datenightp3.herokuapp.com/
+
 ## Project Description
 For this project, we are going to make a Date Night Applicaiton that helps couples with different date night options. Also, we created a preference page that will allow you choose your budget preferences for your date night ideas. Finally, you will be able to post your adventures on the adventure page and post images in the gallery caoursel.
 
